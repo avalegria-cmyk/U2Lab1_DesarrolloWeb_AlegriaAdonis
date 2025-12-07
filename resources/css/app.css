@@ -1,0 +1,159 @@
+/* Importar PicoCSS */
+@import "@picocss/pico/css/pico.min.css";
+
+/* Estilos personalizados mínimos */
+:root {
+    --pico-font-size: 100%;
+    --pico-spacing: 1rem;
+}
+
+/* Ajustes para el layout */
+body {
+    padding-top: 0;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+}
+
+/* Espaciado para alertas */
+.alert {
+    padding: var(--pico-spacing);
+    margin-bottom: var(--pico-spacing);
+    border-radius: var(--pico-border-radius);
+    background-color: var(--pico-primary-background);
+    color: var(--pico-primary-inverse);
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Tarjetas de publicaciones */
+.post-card {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid var(--pico-muted-border-color);
+    border-radius: var(--pico-border-radius);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.post-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.post-card h2 {
+    margin-top: 0;
+}
+
+.post-card h2 a {
+    text-decoration: none;
+    color: var(--pico-primary);
+    transition: color 0.2s ease;
+}
+
+.post-card h2 a:hover {
+    color: var(--pico-primary-hover);
+}
+
+/* Imágenes de posts */
+.post-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: var(--pico-border-radius);
+    margin-bottom: 1rem;
+}
+
+.post-detail-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: var(--pico-border-radius);
+    margin: 1rem 0;
+}
+
+.post-meta {
+    color: var(--pico-muted-color);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+/* Comentarios */
+.comment {
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--pico-primary);
+    background-color: var(--pico-card-background-color);
+    border-radius: var(--pico-border-radius);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.comment-author {
+    font-weight: bold;
+    color: var(--pico-primary);
+    font-size: 1rem;
+}
+
+.comment-date {
+    color: var(--pico-muted-color);
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Botones en línea */
+.inline-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.inline-buttons form {
+    margin: 0;
+}
+
+.inline-buttons button,
+.inline-buttons a {
+    margin: 0;
+}
+
+/* Tabla de usuarios */
+table {
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+table thead {
+    background-color: var(--pico-primary-background);
+}
+
+table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+table tbody tr:hover {
+    background-color: var(--pico-primary-focus);
+}
+
+table td,
+table th {
+    padding: 1rem;
+}
+
+/* Navegación del header */
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav form {
+    margin: 0;
+}
+
+nav form button {
+    margin: 0;
+}
