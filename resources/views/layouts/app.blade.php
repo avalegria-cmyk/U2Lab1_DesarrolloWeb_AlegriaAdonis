@@ -16,7 +16,7 @@
     <header class="container">
         <nav>
             <ul>
-                <li><strong><a href="{{ route('home') }}">📝 Mi Blog</a></strong></li>
+                <li><strong><a href="{{ route('home') }}">Blog Alegria Adonis</a></strong></li>
             </ul>
             <ul>
                 @auth

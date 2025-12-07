@@ -35,9 +35,9 @@
                             </td>
                             <td>
                                 @if($user->is_active)
-                                    <span style="color: #28a745;">✓ Activo</span>
+                                    <span style="color: #28a745;">Activo</span>
                                 @else
-                                    <span style="color: #dc3545;">✗ Inactivo</span>
+                                    <span style="color: #dc3545;">Inactivo</span>
                                 @endif
                             </td>
                             <td>{{ $user->created_at->format('d/m/Y') }}</td>
